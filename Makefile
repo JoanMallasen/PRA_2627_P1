@@ -6,5 +6,9 @@ bin/testNode: testNode.cpp Node.h
 	mkdir -p bin
 	g++ -o bin/testNode testNode.cpp
 
+bin/testListLinked: testListLinked.cpp ListLinked.h Node.h List.h
+	mkdir -p bin
+	g++ -o bin/testListLinked testListLinked.cpp
+
 clean:
 	rm -rf *.o *.gch *.pch bin
