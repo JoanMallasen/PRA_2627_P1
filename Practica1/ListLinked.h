@@ -32,7 +32,7 @@ class ListLinked : public List<T> {
                 Node<T>* aux = first->next;
                 delete first;
                 first = aux;
-            }
+            }   
         }
 
         void insert(int pos, T e) override {
